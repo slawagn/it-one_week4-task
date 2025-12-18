@@ -1,0 +1,12 @@
+x-common-variables: &common-variables
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: password
+
+services:
+  db:
+    image: 'postgres:18.1-trixie'
+    environment: *common-variables
+    volumes:
+      - .:/workspace
+    ports:
+      - 5432:5432

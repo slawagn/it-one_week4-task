@@ -1,0 +1,6 @@
+{
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "db",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose"
+}
